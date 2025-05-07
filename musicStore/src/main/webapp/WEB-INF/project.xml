@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Insert Playlist Servlet -->
+    <servlet>
+        <servlet-name>InsertPlaylistServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.InsertPlalistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertPlaylistServlet</servlet-name>
+        <url-pattern>/InsertPlalistServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Playlist Servlet -->
+    <servlet>
+        <servlet-name>DeletePlaylistServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.DeletePlaylistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePlaylistServlet</servlet-name>
+        <url-pattern>/DeletePlaylistServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--  Genre servlet here -->
+   
+    <servlet>
+        <servlet-name>GenresServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.GenresServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GenresServlet</servlet-name>
+        <url-pattern>/GenresServlet</url-pattern>
+    </servlet-mapping>
+    
+  
+    
+     <!-- delete playlist songs servlet here -->
+   <servlet>
+        <servlet-name>RemoveSongFromPlaylistServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.RemoveSongFromPlaylistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveSongFromPlaylistServlet</servlet-name>
+        <url-pattern>/RemoveSongFromPlaylistServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <!-- update Playlist Name Servlet here -->
+   <servlet>
+        <servlet-name>updatePlaylistNameServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.updatePlaylistNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatePlaylistNameServlet</servlet-name>
+        <url-pattern>/updatePlaylistNameServlet</url-pattern>
+    </servlet-mapping>
+    
+     <!-- Display Playlist Servlet here -->
+   <servlet>
+        <servlet-name>DisplayPlaylistsServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.DisplayPlaylistsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayPlaylistsServlet</servlet-name>
+        <url-pattern>/DisplayServlet</url-pattern>
+    </servlet-mapping>
+    
+     <!-- search songs servlet here -->
+   <servlet>
+        <servlet-name>searchServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.searchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchServlet</servlet-name>
+        <url-pattern>/searchServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Display Songs Servlet here -->
+   <servlet>
+        <servlet-name>DisplaySongsServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.DisplaySongsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplaySongsServlet</servlet-name>
+        <url-pattern>/DisplaySongsServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- Playlist Songs Servlet here -->
+   <servlet>
+        <servlet-name>PlaylistSongsServlet</servlet-name>
+        <servlet-class>musicStore.Servlets.PlaylistSongsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlaylistSongsServlet</servlet-name>
+        <url-pattern>/PlaylistSongsServlet</url-pattern>
+    </servlet-mapping>
+    
+
+</web-app>
